@@ -1,0 +1,25 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #333;
+  --link-color: #0066cc;
+  --highlight-bg: #0066cc;
+  --highlight-text: #fff;
+  --border-color: #ccc;
+  --divider-color: #ccc;
+  --footer-bg: #f9f9f9;
+  --footer-text: #777;
+  --footer-border: #ccc;
+}
+
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #eaeaea;
+  --link-color: #66aaff;
+  --highlight-bg: #66aaff;
+  --highlight-text: #121212;
+  --border-color: #444;
+  --divider-color: #555;
+  --footer-bg: #181818;
+  --footer-text: #bbb;
+  --footer-border: #444;
+}

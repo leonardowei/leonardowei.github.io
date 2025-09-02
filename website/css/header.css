@@ -1,0 +1,61 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-color);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+  z-index: 1000;
+  color: var(--text-color);
+}
+
+header h1 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.highlight,
+nav a.active {
+  color: var(--highlight-text);
+  background-color: var(--highlight-bg);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 15px;
+  color: var(--text-color); /* icon color changes with theme */
+  transition: color 0.3s ease;
+}
+
+.theme-btn:hover {
+  color: var(--link-color);
+}

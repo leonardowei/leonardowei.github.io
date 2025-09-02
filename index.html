@@ -4,50 +4,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Igor Cardoso | Academic Website</title>
+  <title>Igor Cardoso</title>
+  <link rel="icon" href="website/assets/images/computer_icon.png" type="image/png">
+  <link rel="stylesheet" href="website/css/vars.css">
+  <link rel="stylesheet" href="website/css/header.css">
   <link rel="stylesheet" href="website/css/styles.css">
+  <link rel="stylesheet" href="website/css/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+  <!-- Header -->
   <header>
-    <div class="container">
-      <h1>Igor Cardoso</h1>
-      <p>PhD Student, Department of Industrial Engineering, Texas Tech University</p>
-      <nav>
-        <a href="index.html" class="highlight">Home</a>
-        <a href="website/pages/research.html">Research</a>
-        <a href="website/assets/documents/Curriculm_Vitae___Igor_Lucindo_Cardoso.pdf" target="_blank">CV</a>
-        <a href="https://scholar.google.com/citations?user=h3CWq2kAAAAJ&hl=en" target="_blank">
-          <i class="fas fa-graduation-cap"></i> Google Scholar
-        </a>
-        <a href="https://www.linkedin.com/in/igorlucindo/" target="_blank">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://github.com/IgorLucindo" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-      </nav>
-    </div>
+    <h1>Igor Cardoso</h1>
+    <nav>
+      <a href="#about-me">Home</a>
+      <a href="#news">News</a>
+      <a href="#pub">Publications</a>
+      <a href="website/assets/docs/CV_Igor_Lucindo_Cardoso.pdf" target="_blank">CV</a>
+      <a href="https://scholar.google.com/citations?user=h3CWq2kAAAAJ&hl=en" target="_blank">
+        <i class="fas fa-graduation-cap"></i> Google Scholar
+      </a>
+      <a href="https://www.linkedin.com/in/igorlucindo/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/IgorLucindo" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button>
+    </nav>
   </header>
 
+  <!-- Main -->
   <main>
-    <div class="container">
+    <div id="about-me" class="container">
       <img src="website/assets/images/profile_picture.jpeg" alt="Your Name" class="profile">
       <h2>About Me</h2>
       <p>
-        I have always been passionate about mathematics and problem-solving, which has driven my professional journey. I enjoy tackling complex challenges and continuously expanding my knowledge in the field.
+        Hi, I'm Igor Cardoso, a Ph.D. student in Industrial Engineering at Texas Tech University. I have always been passionate about mathematics and problem-solving, which has driven my professional journey.
       </p>
       <p>
-        Currently, I am pursuing a Ph.D. in Industrial Engineering at Texas Tech University, where my research focuses on Integer Linear Programming and its applications in optimization. I am particularly interested in developing efficient algorithms and mathematical models to solve real-world industrial problems.
+        My research focuses on Integer Linear Programming and its applications in optimization. I am particularly interested in developing efficient algorithms and mathematical models to solve real-world industrial problems.
       </p>
+    </div>
+
+    <hr class="divider">
+
+    <div id="news" class="container">
+      <h2>News</h2>
+      <p>
+        February 2025 - I joined the INFORMS Student Chapter at Texas Tech University as an active member. I have been engaging with the Industrial Engineering research community, attending seminars, and collaborating with peers to strengthen my knowledge in optimization and operations research.
+      </p>
+    </div>
+
+    <hr class="divider">
+
+    <div id="pub" class="container">
+      <h2>Publications</h2>
+      <p>
+        <strong>Cardoso, Igor</strong>, Gomes, Carlos, Rosa, Paulo F.F. and da Fonseca, Vinicius Prado (2024). 
+        <a href="https://ieeexplore.ieee.org/document/10596873" target="_blank">
+            <strong>Comparing Pre-Trained Object Detection Models for Autonomous Grasp on Affordable Prosthetic Hands</strong>
+        </a>. 
+        In: <em>MeMeA 2024 - IEEE Medical Measurements &amp; Applications</em>.
+      </p>
+      <div class="pub-links">
+        <a href="website/assets/docs/paper.pdf" target="_blank" class="btn">PDF</a>
+        <a href="https://github.com/IgorLucindo/prothestic-ada-hand" target="_blank" class="btn">Code</a>
+      </div>
     </div>
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Igor Cardoso</p>
+      <p>&copy; 2025 Igor Cardoso. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="website/src/highlightScrollButtons.js"></script>
+  <script src="website/src/toggleTheme.js"></script>
 </body>
 </html>
