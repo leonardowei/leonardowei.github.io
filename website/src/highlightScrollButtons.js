@@ -6,7 +6,7 @@ function highlightScrollButtons() {
     let current = "";
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 120;
+        const sectionTop = section.offsetTop - 160;
         if (scrollY >= sectionTop) {
         current = section.getAttribute("id");
         }

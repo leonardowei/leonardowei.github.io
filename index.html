@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="website/css/styles.css">
   <link rel="stylesheet" href="website/css/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <meta name="description" content="Igor Cardoso - PhD student in Industrial Engineering at Texas Tech. Research on Integer Linear Programming, optimization, and algorithms.">
+  <meta name="author" content="Igor Cardoso">
+  <meta property="og:title" content="Igor Cardoso">
+  <meta property="og:description" content="PhD student in Industrial Engineering at Texas Tech. Research on Integer Linear Programming and optimization.">
+  <meta property="og:image" content="website/assets/images/profile_picture.jpeg">
+  <meta property="og:type" content="website">
 </head>
 
 <body>
@@ -38,7 +45,7 @@
   <!-- Main -->
   <main>
     <div id="about-me" class="container">
-      <img src="website/assets/images/profile_picture.jpeg" alt="Your Name" class="profile">
+      <img src="website/assets/images/profile_picture.jpeg" alt="Portrait of Igor Cardoso" class="profile" loading="lazy">
       <h2>About Me</h2>
       <p>
         Hi, I'm Igor Cardoso, a Ph.D. student in Industrial Engineering at Texas Tech University. I have always been passionate about mathematics and problem-solving, which has driven my professional journey.
@@ -52,25 +59,27 @@
 
     <div id="news" class="container">
       <h2>News</h2>
-      <p>
-        February 2025 - I joined the INFORMS Student Chapter at Texas Tech University as an active member. I have been engaging with the Industrial Engineering research community, attending seminars, and collaborating with peers to strengthen my knowledge in optimization and operations research.
-      </p>
+      <ul class="news-list">
+        <li><strong>Feb 2025</strong> — Joined the INFORMS Student Chapter at Texas Tech University. Involved in seminars and collaborations to expand my knowledge of optimization and operations research.</li>
+      </ul>
     </div>
 
     <hr class="divider">
 
     <div id="pub" class="container">
       <h2>Publications</h2>
-      <p>
-        <strong>Cardoso, Igor</strong>, Gomes, Carlos, Rosa, Paulo F.F. and da Fonseca, Vinicius Prado (2024). 
-        <a href="https://ieeexplore.ieee.org/document/10596873" target="_blank">
-            <strong>Comparing Pre-Trained Object Detection Models for Autonomous Grasp on Affordable Prosthetic Hands</strong>
-        </a>. 
-        In: <em>MeMeA 2024 - IEEE Medical Measurements &amp; Applications</em>.
-      </p>
-      <div class="pub-links">
-        <a href="website/assets/docs/paper.pdf" target="_blank" class="btn">PDF</a>
-        <a href="https://github.com/IgorLucindo/prothestic-ada-hand" target="_blank" class="btn">Code</a>
+      <div class="pub-card">
+        <p>
+          <strong>Cardoso, Igor</strong>, Gomes, Carlos, Rosa, Paulo F.F. and da Fonseca, Vinicius Prado (2024). 
+          <a href="https://ieeexplore.ieee.org/document/10596873" target="_blank">
+              <strong>Comparing Pre-Trained Object Detection Models for Autonomous Grasp on Affordable Prosthetic Hands</strong>
+          </a>. 
+          In: <em>MeMeA 2024 - IEEE Medical Measurements &amp; Applications</em>.
+        </p>
+        <div class="pub-links">
+          <a href="website/assets/docs/paper.pdf" target="_blank" class="btn">PDF</a>
+          <a href="https://github.com/IgorLucindo/prothestic-ada-hand" target="_blank" class="btn">Code</a>
+        </div>
       </div>
     </div>
   </main>
@@ -78,12 +87,15 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 Igor Cardoso. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Igor Cardoso. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- Scripts -->
   <script src="website/src/highlightScrollButtons.js"></script>
   <script src="website/src/toggleTheme.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

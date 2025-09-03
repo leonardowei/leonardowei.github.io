@@ -6,3 +6,11 @@ footer {
   background: var(--footer-bg);
   border-top: 1px solid var(--footer-border);
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  footer {
+    padding: 8px;
+    font-size: 0.85em;
+  }
+}
