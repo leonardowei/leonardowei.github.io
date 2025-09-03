@@ -8,7 +8,7 @@ body {
 
 main {
   padding: 20px;
-  margin-top: 90px;
+  margin-top: 140px;
 }
 
 main p {
@@ -41,7 +41,7 @@ main p {
   border: none;
   height: 3px;
   background: linear-gradient(to right, transparent, var(--divider-color), transparent);
-  width: 58%;
+  width: 51%;
   margin: 60px auto;
   border-radius: 2px;
 }
@@ -126,7 +126,7 @@ main p {
   }
 
   #pub p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   .pub-links .btn {
