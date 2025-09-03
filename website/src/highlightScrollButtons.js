@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll("main .container");
+const sections = document.querySelectorAll("main section");
 const navLinks = document.querySelectorAll("nav a");
 
 

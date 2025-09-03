@@ -25,7 +25,7 @@
   <header>
     <h1>Igor Cardoso</h1>
     <nav>
-      <a href="#about-me">Home</a>
+      <a href="#about">Home</a>
       <a href="#news">News</a>
       <a href="#pub">Publications</a>
       <a href="website/assets/docs/CV_Igor_Lucindo_Cardoso.pdf" target="_blank">CV</a>
@@ -44,7 +44,7 @@
 
   <!-- Main -->
   <main>
-    <div id="about-me" class="container">
+    <section id="about">
       <img src="website/assets/images/profile_picture.jpeg" alt="Portrait of Igor Cardoso" class="profile" loading="lazy">
       <h2>About Me</h2>
       <p>
@@ -53,20 +53,20 @@
       <p>
         My research focuses on Integer Linear Programming and its applications in optimization. I am particularly interested in developing efficient algorithms and mathematical models to solve real-world industrial problems.
       </p>
-    </div>
+    </section>
 
     <hr class="divider">
 
-    <div id="news" class="container">
+    <section id="news">
       <h2>News</h2>
       <ul class="news-list">
         <li><strong>Feb 2025</strong> — Joined the INFORMS Student Chapter at Texas Tech University. Involved in seminars and collaborations to expand my knowledge of optimization and operations research.</li>
       </ul>
-    </div>
+    </section>
 
     <hr class="divider">
 
-    <div id="pub" class="container">
+    <section id="pub">
       <h2>Publications</h2>
       <div class="pub-card">
         <p>
@@ -81,14 +81,14 @@
           <a href="https://github.com/IgorLucindo/prothestic-ada-hand" target="_blank" class="btn">Code</a>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
+    <section>
       <p>&copy; <span id="year"></span> Igor Cardoso. All rights reserved.</p>
-    </div>
+    </section>
   </footer>
 
   <!-- Scripts -->
@@ -96,6 +96,9 @@
   <script src="website/src/toggleTheme.js"></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelector('#news').scrollIntoView({
+      behavior: 'smooth'
+    });
   </script>
 </body>
 </html>

@@ -62,11 +62,6 @@ nav a.active {
 
 /* Mobile */
 @media (max-width: 768px) {
-  .container {
-    max-width: 100%; /* Full width on mobile */
-    padding: 15px; /* Slightly less padding for more screen space */
-  }
-
   main {
     margin-top: 80px; /* Adjust for potentially smaller header */
     padding: 15px;

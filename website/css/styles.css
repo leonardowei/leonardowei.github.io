@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -12,19 +16,19 @@ main {
 }
 
 main p {
-  text-align: justify;
+  /* text-align: justify; */
   font-size: 1.3rem;
   line-height: 1.4;
 }
 
-.container {
+section {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 20px;
   scroll-margin-top: 90px;
 }
 
-.container a {
+section a {
   color: var(--link-color);
 }
 
@@ -35,6 +39,7 @@ main p {
   float: right;
   margin: 0 0 10px 20px;
   border-radius: 50%;
+  border: 2px solid var(--link-color);
 }
 
 .divider {
@@ -108,7 +113,7 @@ main p {
     font-size: 1.1rem;
   }
 
-  .container {
+  section {
     scroll-margin-top: 130px;
   }
 
