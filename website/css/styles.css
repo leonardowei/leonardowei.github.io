@@ -180,7 +180,7 @@ section a {
 
   .pub-card {
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     width: 100%;
   }
 
