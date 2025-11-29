@@ -178,7 +178,14 @@ section a {
   }
 
 
-  
+  .pub-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pub-img img {
+    width: 60%;   /* auto-resize image */
+  }
   
 
 
