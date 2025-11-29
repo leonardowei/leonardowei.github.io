@@ -180,13 +180,20 @@ section a {
 
   .pub-card {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    width: 100%;
   }
 
   .pub-img img {
     width: 60%;   /* auto-resize image */
+    height: auto;
   }
   
+  .pub-card p {
+    word-wrap: break-word;     /* prevents long words from leaking outside */
+    white-space: normal;       /* allow text to wrap properly */
+    width: 100%;               /* ensures paragraph doesn't overflow */
+  }
 
 
 }
