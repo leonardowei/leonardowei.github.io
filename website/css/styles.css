@@ -109,7 +109,7 @@ section a {
 }
 
 .pub-img img {
-  width: 120px;        /* thumbnail size */
+  width: 200px;        /* thumbnail size */
   height: auto;        /* keeps aspect ratio */
   border-radius: 8px;  /* smooth rounded corners */
   box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* subtle shadow */
@@ -134,6 +134,47 @@ section a {
 
 .figure_caption{
   text-align: center;
+}
+
+
+.project-card {
+  display: flex;
+  flex-direction: column;   /* <-- Forces image BELOW the text */
+  align-items: flex-start;
+  padding: 1em;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+}
+
+.project-text h3{
+  margin: 0;
+  padding: 0;
+  /* margin-top: 0.3em; */
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+  color: var(--link-color);
+}
+
+.project-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* centers image horizontally */
+  /* margin-top: 10px; */
+}
+
+
+.project-img img {
+  width: 90%;             /* adjust as you like */
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  align-self: center;       /* centers the image only */
+
 }
 
 
@@ -181,11 +222,11 @@ section a {
   .pub-card {
     flex-direction: column;
     text-align: center;
-    width: 100%;
+    width: 95%;
   }
 
   .pub-img img {
-    width: 60%;   /* auto-resize image */
+    width: 70%;   /* auto-resize image */
     height: auto;
   }
   
@@ -195,5 +236,15 @@ section a {
     width: 100%;               /* ensures paragraph doesn't overflow */
   }
 
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+    width: 95%;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.3em;
+  }
 
 }
