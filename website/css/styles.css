@@ -145,6 +145,7 @@ section a {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   margin-bottom: 1.5em;
+  text-align: justify;
 }
 
 .project-text h3{
